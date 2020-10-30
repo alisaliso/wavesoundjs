@@ -1,0 +1,27 @@
+{
+  "name": "wavesoundjs",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "tiny",
+    "npm",
+    "package",
+    "bamblehorse"
+  ],
+  "homepage": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 80"
+  },
+  "author": "alisaliso",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {}
+}
