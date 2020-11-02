@@ -1,6 +1,6 @@
-import WaveSoundjs from './js/WaveSoundjs';
+import WaveSoundjs from 'wavesoundjs';
 
-import points from './js/points';
+import points from './points';
 const playerContainer = document.querySelector('.container');
 
 // params

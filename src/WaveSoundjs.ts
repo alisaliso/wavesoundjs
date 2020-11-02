@@ -5,7 +5,7 @@ import parseWidthData from "./parser/parseWidthData";
 import Rectangle from "./rectangleClass";
 
 interface IVariables {
-  container: HTMLDivElement,
+  container: Element,
   points: number[],
   defaultWaveColor: {
     top: string,
