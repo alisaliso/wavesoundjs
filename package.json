@@ -2,7 +2,23 @@
   "name": "wavesoundjs",
   "version": "1.0.0",
   "description": "Javascript component for interacting with audio built on Canvas",
-  "license": "MIT",
+  "main": "lib/app.js",
+  "types": "lib/app.d.ts",
+  "author": "alisaliso",
+  "scripts": {
+    "start": "parcel src/index.html -p 80",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib /**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/AlisaLiso/wavesoundjs"
@@ -17,15 +33,11 @@
     "wave",
     "sound"
   ],
-  "main": "dist/app.js",
-  "types": "dist/app.d.ts",
-  "scripts": {
-    "start": "parcel src/index.html -p 80",
-    "build": "tsc"
-  },
-  "author": "alisaliso",
+  "license": "MIT",
   "devDependencies": {
+    "prettier": "^2.1.2",
     "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.5"
   }
 }

@@ -10,7 +10,7 @@ export default class Rectangle {
   alpha: number; // current alpha for this instance
   triggered: boolean; // is running
   done: boolean; // has finished animate
-  done_transfer: boolean; // has finished transfer
+  doneTransfer: boolean; // has finished transfer
 
   constructor(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, color: string, speed: number) {
     this.ctx = ctx; // context for this instance
@@ -23,28 +23,29 @@ export default class Rectangle {
     this.alpha = 0; // current alpha for this instance
     this.triggered = false; // is running
     this.done = false; // has finished animate
-    this.done_transfer = false; // has finished transfer
+    this.doneTransfer = false; // has finished transfer
   }
 
   update() {
-    if (this.triggered && !this.done) {  // only if active
-      this.alpha += this.speed;          // update alpha
-      this.done = (this.alpha >= 1);    // update status
+    if (this.triggered && !this.done) {
+      // only if active
+      this.alpha += this.speed; // update alpha
+      this.done = this.alpha >= 1; // update status
     }
 
-    this.ctx.fillStyle = this.color;   // render this instance
+    this.ctx.fillStyle = this.color; // render this instance
     this.ctx.globalAlpha = Math.min(1, this.alpha);
     this.ctx.fillRect(this.x, this.y, this.width, this.height);
   }
 
   trigger() {
-    this.triggered = true // start this rectangle
+    this.triggered = true; // start this rectangle
   }
 
   transfer() {
     this.ctx.fillStyle = this.color;
     this.ctx.globalAlpha = Math.min(1, this.alpha);
     this.ctx.fillRect(this.x, this.y, this.width, this.height);
-    this.done_transfer = true;
+    this.doneTransfer = true;
   }
 }

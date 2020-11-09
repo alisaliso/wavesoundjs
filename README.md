@@ -37,11 +37,15 @@ WaveSoundjs.create({
 ## Development
 
 ```sh
-#Terminal 1
+# Terminal 1
 $ docker-compose up
 
-#Terminal 2
+# Terminal 2
 $ docker-compose exec app bash
+
+# > Build Project
 $ tsc
+
+# > Run Project
 $ npm run start
 ```

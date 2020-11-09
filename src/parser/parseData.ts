@@ -8,16 +8,16 @@
 // parse data
 
 function parseData(data: number[]) {
-  let negativeNumbersArray = [];
-  let positiveNumbersArray = [];
+  const negativeNumbersArray = [];
+  const positiveNumbersArray = [];
   for (let i = 0; i < data.length; i++) {
-    if ((i + 2) % 2 == 0) {
+    if ((i + 2) % 2 === 0) {
       // 30 is canvas height / 2
       // height / 2 because part of points go to top and another part go to bottom
       // it's needed for top and bottom points fit in canvas height
       if (data[i] < -30) {
         negativeNumbersArray.push(Math.round(-30));
-      } else if (data[i] == 0) {
+      } else if (data[i] === 0) {
         // -1 is for line between top and bottom
         negativeNumbersArray.push(Math.round(-1));
       } else {
@@ -26,7 +26,7 @@ function parseData(data: number[]) {
     } else {
       if (data[i] > 30) {
         positiveNumbersArray.push(Math.round(20));
-      } else if (data[i] == 0) {
+      } else if (data[i] === 0) {
         // 1 is for line between top and bottom
         positiveNumbersArray.push(Math.round(1));
       } else {
@@ -35,7 +35,7 @@ function parseData(data: number[]) {
     }
   }
 
-  return { negativeNumbersArray, positiveNumbersArray }
+  return { negativeNumbersArray, positiveNumbersArray };
 }
 
 export default parseData;

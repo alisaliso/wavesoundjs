@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log",
+        "error",
+        "debug",
+        "info",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    }
+  }
+}
