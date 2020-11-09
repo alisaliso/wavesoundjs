@@ -6,7 +6,7 @@
   "types": "lib/app.d.ts",
   "author": "alisaliso",
   "scripts": {
-    "start": "parcel src/index.html -p 80",
+    "start": "parcel example/index.html -p 80",
     "build": "tsc",
     "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
