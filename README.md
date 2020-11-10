@@ -1,6 +1,15 @@
 # wavesoundjs
 
+![License](https://img.shields.io/npm/l/wavesoundjs)
+![Package Version](https://img.shields.io/npm/v/wavesoundjs)
+
 ![SoundWaweformJS example](media/screenshot.png)
+
+## Installation
+
+```
+$ npm install wavesoundjs
+```
 
 ## Usage
 
