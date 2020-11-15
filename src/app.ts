@@ -1,5 +1,3 @@
-'use strict';
-
 import parseData from './parser/parseData';
 import parseWidthData from './parser/parseWidthData';
 import Rectangle from './rectangleClass';

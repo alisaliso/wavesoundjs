@@ -1,10 +1,10 @@
-import WaveSoundjs from 'wavesoundjs';
+import wavesoundjs from 'wavesoundjs';
 
 import points from './points';
 const playerContainer = document.querySelector('.container');
 
 // params
-//  WaveSoundjs.create({
+//  wavesoundjs.create({
 //    container: player_container, - html element
 //    points, - array of numbers
 //    spaceBetween - number
@@ -13,7 +13,7 @@ const playerContainer = document.querySelector('.container');
 //    animatedWaveColor - color / object { top: color, bottom: color }
 //   })
 
-WaveSoundjs.create({
+wavesoundjs.create({
   container: playerContainer,
   points,
   spaceBetween: 1,
