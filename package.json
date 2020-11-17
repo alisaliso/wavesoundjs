@@ -1,6 +1,6 @@
 {
   "name": "wavesoundjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript component for interacting with audio built on Canvas",
   "main": "lib/app.js",
   "exports": {
