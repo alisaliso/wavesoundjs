@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
+    "module": "AMD",
     "target": "es6",
+    "esModuleInterop": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./lib",
+    "outFile": "./lib/app.js",
     "baseUrl": "./src",
     "declaration": true,
   },
