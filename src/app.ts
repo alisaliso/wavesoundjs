@@ -30,7 +30,7 @@ export default class WaveSoundjs extends GlobalVariables {
 
     const barWidth = this.defaultWidthHeight().barWidth;
     const barHeight = this.defaultWidthHeight().barHeight;
-    const spaceBetween = this.params.spaceBetween ? this.params.spaceBetween : this.params.spaceBetween;
+    const spaceBetween = this.params.spaceBetween ? this.params.spaceBetween : this.defaultValues.spaceBetween;
     const cellWidth = this.params.cellWidth ? this.params.cellWidth : this.defaultValues.cellWidth;
     const peacksInCurrentBarWidth = Math.round(barWidth / (spaceBetween + cellWidth));
     const positiveNumbers = this.params.points
